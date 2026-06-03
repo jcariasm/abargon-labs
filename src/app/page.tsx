@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-const tools = [
+const tools: { name: string; description: string; href: string; status: "live" | "soon"; icon: string; accent: string }[] = [
   {
     name: "AI ROI Calculator",
     description: "Calcula el retorno de inversión de implementar IA en tu operación. Selecciona industria, proceso y métricas.",
     href: "/roi",
-    status: "live" as const,
+    status: "live" ,
     icon: "M9 7h-3a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M9 15L20 4M15 4h5v5",
     accent: "#6366f1",
   },
@@ -13,7 +13,7 @@ const tools = [
     name: "Revenue Leak Calculator",
     description: "Identifica fugas de ingreso en tu operación retail. Diagnóstico rápido con recomendaciones.",
     href: "/revenue-leak",
-    status: "live" as const,
+    status: "live" ,
     icon: "M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6",
     accent: "#10b981",
   },
@@ -21,7 +21,7 @@ const tools = [
     name: "Mapa Fintech México",
     description: "Directorio interactivo de fintechs mexicanas. Clasificadas por categoría, regulación y tech stack.",
     href: "/fintech-map",
-    status: "live" as const,
+    status: "live" ,
     icon: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0zM12 7v0",
     accent: "#f59e0b",
   },
@@ -29,7 +29,7 @@ const tools = [
     name: "AI Scoring Simulator",
     description: "Demo interactivo de scoring crediticio con IA. Visualiza cómo un motor de decisión evalúa riesgo.",
     href: "/ai-scoring",
-    status: "live" as const,
+    status: "live" ,
     icon: "M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z",
     accent: "#ef4444",
   },
